@@ -137,7 +137,7 @@ def downloadPost():
                 URL = link.replace('https://www.instagram.com/p/', '')
                 URL = URL.replace('/','')
                 L = instaloader.Instaloader()
-                L.login('test_.ali', 'ali5731')
+                L.login('user', 'password')
                 post = instaloader.Post.from_shortcode(L.context, URL)
                 L.download_post(post, target=URL)
                 my_progress.grid_forget()
